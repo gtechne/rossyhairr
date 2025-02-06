@@ -1,114 +1,114 @@
-const backendDomin = process.env.REACT_APP_BACKEND_URL//"http://localhost:8080"
+const backendDomin = process.env.REACT_APP_BACKEND_URL
 
 const SummaryApi = {
     signUP : {
-        url : `${backendDomin}/api/signup`,
+        url : `${backendDomin}api/signup`,
         method : "post"
     },
     signIn : {
-        url : `${backendDomin}/api/signin`,
+        url : `${backendDomin}api/signin`,
         method : "post"
     },
     submitReview: {
-        url: `${backendDomin}/api/submit-review`,
+        url: `${backendDomin}api/submit-review`,
         method: "POST"
     },
     
     current_user : {
-        url : `${backendDomin}/api/user-details`,
+        url : `${backendDomin}api/user-details`,
         method : "get"
     },
     logout_user : {
-        url : `${backendDomin}/api/userLogout`,
+        url : `${backendDomin}api/userLogout`,
         method : 'get'
     },
     allUser : {
-        url : `${backendDomin}/api/all-user`,
+        url : `${backendDomin}api/all-user`,
         method : 'get'
     },
     updateUser : {
-        url : `${backendDomin}/api/update-user`,
+        url : `${backendDomin}api/update-user`,
         method : "post"
     },
     orderDetails: {
-        url: (orderId) => `${backendDomin}/api/order-details/${orderId}`,
+        url: (orderId) => `${backendDomin}api/order-details/${orderId}`,
         method: "get"
     },
     updateOrderStatus: {
-        url: (orderId) => `${backendDomin}/api/update-order-status/${orderId}`,
+        url: (orderId) => `${backendDomin}api/update-order-status/${orderId}`,
         method: "post"
     },
     uploadProduct : {
-        url : `${backendDomin}/api/upload-product`,
+        url : `${backendDomin}api/upload-product`,
         method : 'post'
     },
     allProduct : {
-        url : `${backendDomin}/api/get-product`,
+        url : `${backendDomin}api/get-product`,
         method : 'get'
     },
     updateProduct : {
-        url : `${backendDomin}/api/update-product`,
+        url : `${backendDomin}api/update-product`,
         method  : 'post'
     },
     categoryProduct : {
-        url : `${backendDomin}/api/get-categoryProduct`,
+        url : `${backendDomin}api/get-categoryProduct`,
         method : 'get'
     },
     categoryWiseProduct : {
-        url : `${backendDomin}/api/category-product`,
+        url : `${backendDomin}api/category-product`,
         method : 'post'
     },
     productDetails : {
-        url : `${backendDomin}/api/product-details`,
+        url : `${backendDomin}api/product-details`,
         method : 'post'
     },
     
     getReviews:{
-         url : `${backendDomin}/api/reviews`,
+         url : `${backendDomin}api/reviews`,
         method : 'get'
     },
     addToCartProduct : {
-        url : `${backendDomin}/api/addtocart`,
+        url : `${backendDomin}api/addtocart`,
         method : 'post'
     },
     addToCartProductCount : {
-        url : `${backendDomin}/api/countAddToCartProduct`,
+        url : `${backendDomin}api/countAddToCartProduct`,
         method : 'get'
     },
     addToCartProductView : {
-        url : `${backendDomin}/api/view-card-product`,
+        url : `${backendDomin}api/view-card-product`,
         method : 'get'
     },
     updateCartProduct : {
-        url : `${backendDomin}/api/update-cart-product`,
+        url : `${backendDomin}api/update-cart-product`,
         method : 'post'
     },
     deleteCartProduct : {
-        url : `${backendDomin}/api/delete-cart-product`,
+        url : `${backendDomin}api/delete-cart-product`,
         method : 'post'
     },
     searchProduct : {
-        url : `${backendDomin}/api/search`,
+        url : `${backendDomin}api/search`,
         method : 'get'
     },
     saveShippingDetails: {
-        url: `${backendDomin}/api/save-shipping`,
+        url: `${backendDomin}api/save-shipping`,
         method: "post",
     },
     filterProduct : {
-        url : `${backendDomin}/api/filter-product`,
+        url : `${backendDomin}api/filter-product`,
         method : 'post'
     },
     payment : {
-        url : `${backendDomin}/api/checkout`,
+        url : `${backendDomin}api/checkout`,
         method  : 'post'
     },
     getOrder : {
-        url : `${backendDomin}/api/order-list`,
+        url : `${backendDomin}api/order-list`,
         method : 'get'
     },
     allOrder : {
-        url : `${backendDomin}/api/all-order`,
+        url : `${backendDomin}api/all-order`,
         method : 'get'
     }
     
