@@ -11,7 +11,7 @@ const router = require('./routes')
 
 const app = express()
 app.use(cors({
-    origin : "https://rossyhairr.vercel.app",
+    origin: process.env.FRONTEND_URL || "https://rossyhairr.vercel.app", // Allow frontend
     methods: "GET,POST,PUT,DELETE",
     credentials : true
 }))
@@ -21,7 +21,7 @@ app.use(cookieParser())
 app.use("/api",router)
 
 
-const PORT = 6060 || process.env.PORT
+const PORT = process.env.PORT || 6060
 
 
 connectDB().then(()=>{
